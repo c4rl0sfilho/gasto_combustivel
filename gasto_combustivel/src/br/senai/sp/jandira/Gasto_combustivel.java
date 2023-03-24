@@ -1,0 +1,47 @@
+package br.senai.sp.jandira;
+
+import java.util.Scanner;
+
+public class Gasto_combustivel {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner teclado = new Scanner(System.in);
+		
+		
+		System.out.print("Qual o modelo do carro?");
+		String modelo = teclado.next();
+		System.out.print("Quantos Km/l o carro faz?");
+		double autonomia = teclado.nextDouble();
+		System.out.print("Qual distância você irá percorrer?");
+		double distancia = teclado.nextDouble();
+		System.out.print("Qual o valor do combustível?");
+		double valor = teclado.nextDouble();
+		
+		double quantidade = (distancia / autonomia);
+		double custo = (quantidade * valor);
+		
+
+		System.out.println("          ");
+		System.out.println("-------------------------------------------------");
+		System.out.println("                     RESULTADO                   ");
+		System.out.println("-------------------------------------------------");
+		System.out.println("Modelo do veículo: " + modelo);
+		System.out.println("Autonomia do veículo: " + autonomia + "Km/l");
+		System.out.println("Distância percorrida: " + distancia + "Km");
+		System.out.println("Valor do combustível: R$"+ valor);
+		System.out.println("          ");
+		System.out.println("-------------------------------------------------");
+		System.out.println("Quantidade de combustível utilizada: " + quantidade + "l");
+		System.out.println("Total gasto com a viagem: R$" + custo);
+		System.out.println("-------------------------------------------------");
+
+
+		
+
+		
+
+	}
+
+}

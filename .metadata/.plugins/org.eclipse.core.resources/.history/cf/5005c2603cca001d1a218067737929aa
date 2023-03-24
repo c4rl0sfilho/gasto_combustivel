@@ -1,0 +1,18 @@
+package br.senai.sp.jandira;
+
+import java.util.Scanner;
+
+public class Gasto_combustivel {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner teclado = new Scanner(System.in);
+		String modelo = teclado.next();
+		double autonomia = teclado.nextDouble();
+		double distancia = teclado.nextDouble();
+		double valor = teclado.nextDouble();
+		
+	}
+
+}
